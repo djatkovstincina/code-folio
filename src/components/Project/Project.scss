@@ -1,15 +1,77 @@
 // src/components/Project.scss
 .project {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
+  display: block;
+  background-color: rgba($color: #ffffff, $alpha: 0.05);
+  border-radius: 6px;
+  border: 2px solid rgba($color: #ffffff, $alpha: 0.025);
+  margin-bottom: 2em;
+  color: var(--white);
+  text-decoration: none;
+  transition: transform .4s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-6px);
+  }
+  
+  &-image {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 
-  h2 {
-    margin-top: 0;
+    &-wrap {
+      position: relative;
+    }
+  }
+  
+  &-content {
+    padding: 0 2em 1.4em;
   }
 
-  a {
-    color: #61dafb;
+  &-category {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: fit-content;
+    color: var(--blue-dark);
+    padding: 4px 8px;
+    background: var(--white);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-size: 0.5em;
+    font-weight: 600;
+    opacity: .7;
+  }
+  
+  &-desc {
+    font-size: 1em;
+    line-height: 1.4em;
+    opacity: .7;
+    margin-bottom: 1.4em;
+  }
+  
+  &-link {
+    display: flex;
+    color: var(--bright-green);
     text-decoration: none;
+    font-size: 0.75em;
+    font-weight: 600;
+
+    &-wrap {
+      display: inline-grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 20px;
+    }
+    
+    &:hover {
+      
+      svg {
+        transform: translateX(4px);
+      }
+    }
+    
+    svg {
+      transition: transform .4s ease;
+      margin-left: 6px;
+    }
   }
 }

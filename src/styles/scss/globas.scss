@@ -6,8 +6,8 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--main-background-dark);
-    background: linear-gradient(-45deg, var(--main-background), var(--main-background-dark), var(--main-background), var(--main-background-dark));
+    background-color: var(--blue-dark);
+    background: linear-gradient(-45deg, var(--blue), var(--blue-dark), var(--blue), var(--blue-dark));
     background-size: 400% 400%;
     // animation: gradient 25s ease infinite;
     color: var(--white);
@@ -43,8 +43,9 @@ code {
 }
 
 .button-content {
-    display: flex;
+    display: grid;
     justify-content: flex-start;
+    grid-template-columns: repeat(2, auto);
     gap: 30px;
     margin-bottom: 120px;
 }
@@ -54,7 +55,7 @@ code {
     border: none;
     color: var(--white);
     padding: 15px 30px;
-    background: var(--main-background);
+    background: var(--blue);
     border-radius: 50px;
     border: 2px solid transparent;
     font-size: 1em;
@@ -67,20 +68,67 @@ code {
     &:hover {
         border-color: var(--bright-green);
         box-shadow: 0 0 2px var(--bright-green), 0 0 4px var(--bright-green), 0 0 6px var(--bright-green), 0 0 8px var(--bright-green);
-      }
+    }
 }
 
 .animation-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    padding-top: 120px;
+
+    .hero-image {
+        animation: 5s ease 2s infinite alternate none running hero-move;
+        z-index: -1;
+    }
 }
 
-.social {
+.projects {
     display: flex;
+    justify-content: space-between;
+
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        align-items: center;
+        column-gap: 20px;
+        margin-top: 90px;
+
+        &-btn {
+            position: relative;
+            border: none;
+            color: var(--white);
+            padding: 5px 10px;
+            background: rgba($color: black, $alpha: 0.15);
+            border-radius: 50px;
+            border: 2px solid transparent;
+            font-size: 0.75em;
+            font-weight: 600;
+            box-shadow: none;
+            opacity: 1;
+            transition: all 0.4s ease 0s;
+            cursor: pointer;
+
+            &:hover {
+                border-color: var(--bright-green);
+            }
+
+            &.selected {
+                background: var(--blue);
+                cursor: default;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+
+.social {
+    display: grid;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
 
     a {
         color: #1B4DFF;
@@ -88,7 +136,6 @@ code {
 
         &:hover {
             color: var(--bright-green);
-            // box-shadow: 0 0 2px var(--bright-green), 0 0 4px var(--bright-green), 0 0 6px var(--bright-green), 0 0 8px var(--bright-green);
         }
     }
 }

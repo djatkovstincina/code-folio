@@ -17,21 +17,32 @@
     border: 2px solid rgba($color: #ffffff, $alpha: 0.025);
   }
 
+  .logo {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 32px 160px;
+    column-gap: 10px;
+  }
+
   h1 {
-    color: #1B4DFF;
+    color: var(--blue);
   }
   
   .navigation {
     display: flex;
-    justify-content: center;
-    align-items: center;
     
     ul {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      grid-template-columns: repeat(4, auto);
+      column-gap: 40px;
       list-style: none;
-      display: flex;
+      // display: flex;
       margin: 0;
       padding: 0;
-      gap: 40px;
+      // gap: 40px;
 
 
       li {
