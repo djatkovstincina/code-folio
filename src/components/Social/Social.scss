@@ -1,0 +1,16 @@
+.social {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+
+    a {
+        color: var(--blue);
+        transition: .4s;
+
+        &:hover {
+            color: var(--bright-green);
+        }
+    }
+}

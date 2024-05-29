@@ -1,11 +1,6 @@
 import React from "react";
 import './Header.scss';
-import { GithubUrl, LinkedInUrl, UpworkUrl } from "../../constants/constants";
-import {
-    AiFillCode,
-    AiFillGithub,
-    AiFillLinkedin,
-} from "react-icons/ai";
+import Social from "../Social/Social";
 
 const Header = () => {
     return (
@@ -28,17 +23,7 @@ const Header = () => {
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </nav>
-                            <div className="social">
-                                <a href={GithubUrl} target="_blank" rel="noopener noreferrer">
-                                    <AiFillGithub size="1.25em" />
-                                </a>
-                                <a href={LinkedInUrl} target="_blank" rel="noopener noreferrer">
-                                    <AiFillLinkedin size="1.25em" />
-                                </a>
-                                <a href={UpworkUrl} target="_blank" rel="noopener noreferrer">
-                                    <AiFillCode size="1.25em" />
-                                </a>
-                            </div>
+                            <Social />
                         </div>
                     </div>
                 </div>

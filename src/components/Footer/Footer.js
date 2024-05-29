@@ -1,11 +1,6 @@
 import React from 'react';
 import './Footer.scss';
-import { GithubUrl, LinkedInUrl, UpworkUrl } from "../../constants/constants";
-import {
-    AiFillCode,
-    AiFillGithub,
-    AiFillLinkedin,
-} from "react-icons/ai";
+import Social from '../Social/Social';
 
 const Footer = () => {
     return (
@@ -15,17 +10,7 @@ const Footer = () => {
                     <div className="col-md-12">
                         <div className='footer-content'>
                             <p>&copy; {new Date().getFullYear()} my code-folio by nemanja djatkov</p>
-                            <div className="social">
-                                <a href={GithubUrl} target="_blank" rel="noopener noreferrer">
-                                    <AiFillGithub size="1.25em" />
-                                </a>
-                                <a href={LinkedInUrl} target="_blank" rel="noopener noreferrer">
-                                    <AiFillLinkedin size="1.25em" />
-                                </a>
-                                <a href={UpworkUrl} target="_blank" rel="noopener noreferrer">
-                                    <AiFillCode size="1.25em" />
-                                </a>
-                            </div>
+                            <Social />
                         </div>
                     </div>
                 </div>

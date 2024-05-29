@@ -1,0 +1,45 @@
+.hero {
+
+  &-title {
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 72px;
+    width: max-content;
+    max-width: 100%;
+    background: -webkit-linear-gradient(121.57deg, rgb(255, 255, 255) 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+    padding: 32px 0px 16px;
+  }
+
+  &-text {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2em;
+  }
+
+  &-button-content {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    margin-bottom: 120px;
+  }
+
+  &-animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 120px;
+
+  }
+
+  &-image {
+    animation: 5s ease 2s infinite alternate none running hero-move;
+    z-index: -1;
+  }
+}
