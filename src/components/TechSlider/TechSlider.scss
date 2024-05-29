@@ -1,0 +1,45 @@
+.slick {
+
+    &-slider {
+        text-align: center;
+    }
+    
+    &-slide {
+        color: var(--bright-green);
+        opacity: 0;
+        transition: opacity 1.6s ease-out;
+        
+        &:hover {
+            color: var(--white);
+            transition: color .4s ease-out;
+        }
+    }
+    
+    &-active {
+        opacity: 1 !important;
+        transition: opacity 1.6s ease-in;
+    }
+    
+    &-cloned {
+        opacity: 0.3;
+    }
+    
+    &-box {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        align-items: center;
+        justify-items: center;
+        row-gap: 0.5em;
+        margin: 0 10px;
+        padding: 1em;
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba($color: #ffffff, $alpha: 0.1);
+
+        &-text {
+            font-weight: 600;
+            color: var(--white);
+            font-size: 0.75em;
+        }
+    }
+}

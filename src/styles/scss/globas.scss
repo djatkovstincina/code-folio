@@ -23,7 +23,14 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 16px;
-        padding: 32px 0px 16px;
+        padding: 72px 0px 16px;
+    }
+
+    &-text {
+        font-size: 1em;
+        line-height: 1.4em;
+        opacity: .7;
+        margin-bottom: 1.4em;
     }
 }
 
@@ -39,7 +46,7 @@ body {
     font-weight: 600;
     box-shadow: none;
     opacity: 1;
-    transition: all 0.4s ease 0s;
+    transition: all .4s ease 0s;
     cursor: pointer;
 
     &:hover {

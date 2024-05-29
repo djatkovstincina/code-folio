@@ -3,6 +3,7 @@ export const ResumeUrl = "https://www.cakeresume.com/nemanja-djatkov";
 export const GithubUrl = "https://github.com/djatkovstincina";
 export const LinkedInUrl = "https://www.linkedin.com/in/nemanja-djatkov/";
 export const PersonalEmail = "ndjatkov@gmail.com";
+export const PersonalPhone = "+381643095484";
 export const ProjectsData = [
     {
         image: 'https://picsum.photos/300/180',

@@ -7,7 +7,7 @@
 
     a {
         color: var(--blue);
-        transition: .4s;
+        transition: color .4s ease-in-out;
 
         &:hover {
             color: var(--bright-green);

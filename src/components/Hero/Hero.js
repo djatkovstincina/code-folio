@@ -18,8 +18,8 @@ const Hero = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
                         <h2 className="hero-title">
-                            Hello! <br />
-                            I'm Nemanja Djatkov
+                            <span>Hello!</span> <br />
+                            I'm Nemanja Djatkov<span>.</span>
                         </h2>
                         <p className="hero-text">
                             {/* I am a Graphics Engineer and Designer with a passion for Web Development, who transitioned into entrepreneurship through design, and now lead projects involving design, UX/UI, coding, and business development, with expertise in JavaScript, PHP, SCSS, MySQL, WordPress, SEO, Git and Google Analytics. */}

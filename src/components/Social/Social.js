@@ -2,10 +2,12 @@ import React from 'react';
 import './Social.scss';
 import { GithubUrl, LinkedInUrl, UpworkUrl } from "../../constants/constants";
 import {
-  AiFillCode,
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
+import {
+  TbBrandUpwork,
+} from "react-icons/tb";
 
 const Social = () => {
   return (
@@ -17,7 +19,7 @@ const Social = () => {
         <AiFillLinkedin size="1.25em" />
       </a>
       <a href={UpworkUrl} target="_blank" rel="noopener noreferrer">
-        <AiFillCode size="1.25em" />
+        <TbBrandUpwork size="1.25em" />
       </a>
     </div>
   )
