@@ -2,362 +2,213 @@ import React from 'react';
 
 const BackgroundAnimation = () => (
   <div>
-    <svg
-      className="BgAnimation__svg"
-      viewBox="0 0 602 602"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g opacity="0.15">
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M201.337 87.437C193.474 79.5738 180.725 79.5738 172.862 87.437L87.437 172.862C79.5739 180.725 79.5739 193.474 87.437 201.337L400.663 514.563C408.526 522.426 421.275 522.426 429.138 514.563L514.563 429.138C522.426 421.275 522.426 408.526 514.563 400.663L201.337 87.437ZM30.4869 115.912C-8.82897 155.228 -8.82897 218.972 30.4869 258.287L343.713 571.513C383.028 610.829 446.772 610.829 486.088 571.513L571.513 486.088C610.829 446.772 610.829 383.028 571.513 343.713L258.287 30.4869C218.972 -8.82896 155.228 -8.82896 115.912 30.4869L30.4869 115.912Z"
-          stroke="url(#paint0_radial)"
-          id="path_0"
-        />
-        <path
-          d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z"
-          stroke="url(#paint1_radial)"
-          id="path_1"
-        />
-        <path
-          d="M243.901 471.999L201.337 514.563C193.474 522.426 180.725 522.426 172.862 514.563L87.437 429.138C79.5739 421.275 79.5739 408.526 87.437 400.663L301.148 186.952L244.198 130.002L30.4869 343.713C-8.82897 383.028 -8.82897 446.772 30.4869 486.088L115.912 571.513C155.228 610.829 218.972 610.829 258.287 571.513L300.852 528.949L243.901 471.999Z"
-          stroke="url(#paint2_radial)"
-          id="path_2"
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 856.5 735" xmlSpace="preserve" throwIfNamespace={false}>
+      <g opacity=".5">
+        <defs>
+          <path id="a" d="M218.4 100.7h571.8V437H218.4z" />
+        </defs>
+        <clipPath id="b">
+          <use xlinkHref="#a" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#b)" fill="none" stroke="#00FF97" stroke-width="5.296" stroke-miterlimit="10" d="M222.9 156.4h567.3M288.2 228.2h502M506 300h284.2M622.8 371.7h167.4M292 231.1V101.9M221.1 153v-51.1M364.1 272.4V101.9M436.2 289.5V100.7M508.3 300.6V100.7M573.9 328.9v-227M646 436.5V101.9M718.1 437V100.7" />
+      </g>
+      <path fill="none" stroke="#29ABE2" stroke-width="5.296" stroke-miterlimit="10" d="M112.5 101.9h677.7" />
+      <circle fill="none" stroke="#0F0" stroke-width="5.296" stroke-miterlimit="10" cx="783.1" cy="79" r="50.3">
+        <animate attributeName="r" values="30;50.3;30" keyTimes="0;0.5;1" dur="5s" repeatCount="indefinite" />
+      </circle>
+      <g opacity=".6">
+        <defs>
+          <path id="c" d="M165.8 184.5h137.3v56.8H165.8z" />
+        </defs>
+        <clipPath id="d">
+          <use xlinkHref="#c" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#d)" fill="#060C33" d="M303.1 241.3H165.8v-56.8h77.6l32.3 34.8z" />
+      </g>
+      <g opacity=".6">
+        <defs>
+          <path id="e" d="M165.8 341.5h473.6v56.8H165.8z" />
+        </defs>
+        <clipPath id="f">
+          <use xlinkHref="#e" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#f)" fill="#060C33" d="M639.4 398.3H165.8v-56.8H591l31.7 30.1z" />
+      </g>
+      <g opacity=".6">
+        <defs>
+          <path id="g" d="M127.5 92.2H810v364.3H127.5z" />
+        </defs>
+        <clipPath id="h">
+          <use xlinkHref="#g" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#h)" fill="#060C33" d="M799.3 92.2h-6.8v335.9c0 5.9-4.8 10.7-10.7 10.7H127.5v7c0 5.9 4.8 10.7 10.7 10.7h661.1c5.9 0 10.7-4.8 10.7-10.7V102.9c.1-5.9-4.7-10.7-10.7-10.7" />
+      </g>
+      <path fill="none" stroke="#29ABE2" stroke-width="5.296" stroke-miterlimit="10" d="M778.6 436.5H121.7c-6.4 0-11.6-5.2-11.6-11.6V85.1c0-6.4 5.2-11.6 11.6-11.6h656.9c6.4 0 11.6 5.2 11.6 11.6V425c0 6.3-5.2 11.5-11.6 11.5z" />
+      <path fill="none" stroke="#0F0" stroke-width="5.296" stroke-miterlimit="10" d="M107.5 198.3H73.6V34.9h173.6v35.6" />
+      <path fill="#002F99" d="M297.7 234.9H160.4V178h77.7l32.3 34.8zM634 391.9H160.4v-56.8h425.3l31.7 30z" />
+      <g opacity=".6">
+        <defs>
+          <path id="i" d="M165.8 263h383.4v56.8H165.8z" />
+        </defs>
+        <clipPath id="j">
+          <use xlinkHref="#i" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#j)" fill="#060C33" d="M549.1 319.8H165.8V263h166.5l69.1 26.7 102.8 14.4z" />
+      </g>
+      <path fill="#002F99" d="M543.8 313.4H160.4v-56.8H327l69.1 26.6 102.8 14.4z" />
+      <path fill="none" stroke="#29ABE2" stroke-width="5.296" stroke-miterlimit="10" d="M194.5 101.9s58.3 171.6 254.9 189C646 308.3 646 437 646 437" />
+      <g opacity=".5">
+        <defs>
+          <path id="k" d="M427.5 500.4h292.8v214.3H427.5z" />
+        </defs>
+        <clipPath id="l">
+          <use xlinkHref="#k" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#l)" fill="none" stroke="#00FF97" stroke-width="5.296" stroke-miterlimit="10" d="M427.5 568.5h287.7M427.5 503.1h292.7M500 640.3h215.2M720.2 712.1h-77.5M501.2 643.4V501.3M430.3 569.6v-68.3M573.3 640.8V503.1M645.4 712.1V501.3M717.5 712.7V501.3" />
+      </g>
+      <g opacity=".6">
+        <defs>
+          <path id="m" d="M399.5 217.4h84.4v25.1h-84.4z" />
+        </defs>
+        <clipPath id="n">
+          <use xlinkHref="#m" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#n)" fill="#060C33" d="M399.5 217.4h84.4v25.1h-84.4z">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 0"
+            to="120 0"
+            dur="6s"
+            repeatCount="indefinite"
+            begin="0s"
+            keyTimes="0;0.5;1"
+            values="0 0; 120 0; 0 0" />
+        </path>
+      </g>
+      <rect x="394" y="213.8" width="84.4" height="25.1" fill="#0F0">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          from="0 0"
+          to="120 0"
+          dur="6s"
+          repeatCount="indefinite"
+          keyTimes="0;0.5;1"
+          values="0 0; 120 0; 0 0" />
+      </rect>
+      <g opacity=".6">
+        <defs>
+          <path id="o" d="M399.5 145.6h84.4v25.1h-84.4z" />
+        </defs>
+        <clipPath id="p">
+          <use xlinkHref="#o" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#p)" fill="#060C33" d="M399.5 145.6h84.4v25.1h-84.4z">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          from="0 0"
+          to="180 0"
+          dur="9s"
+          repeatCount="indefinite"
+          keyTimes="0;0.5;1"
+          values="0 0; 180 0; 0 0" />
+        </path>
+      </g>
+      <rect x="394" y="142.1" width="84.4" height="25.1" fill="#0F0">
+      <animateTransform
+          attributeName="transform"
+          type="translate"
+          from="0 0"
+          to="180 0"
+          dur="9s"
+          repeatCount="indefinite"
+          keyTimes="0;0.5;1"
+          values="0 0; 180 0; 0 0" />
+      </rect>
+      <g opacity=".6">
+        <defs>
+          <path id="q" d="M64.6 291.3h224.1v224.1H64.6z" />
+        </defs>
+        <clipPath id="r">
+          <use xlinkHref="#q" overflow="visible" />
+        </clipPath>
+        <circle clip-path="url(#r)" fill="none" stroke="#060C33" stroke-width="5.296" stroke-miterlimit="10" cx="176.6" cy="403.3" r="109.4">
+          <animate attributeName="r" values="90;109.4;90" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" />
+        </circle>
+      </g>
+      <circle fill="none" stroke="#0F0" stroke-width="5.296" stroke-miterlimit="10" cx="160.4" cy="391.9" r="109.4">
+        <animate attributeName="r" values="90;109.4;90" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" />
+      </circle>
+      <g opacity=".6">
+        <defs>
+          <path id="s" d="M697.9 209.6h56.2v56.2h-56.2z" />
+        </defs>
+        <clipPath id="t">
+          <use xlinkHref="#s" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#t)" fill="#060C33" d="M754.1 237.7c0 15.5-12.6 28.1-28.1 28.1-15.5 0-28.1-12.6-28.1-28.1 0-15.5 12.6-28.1 28.1-28.1 15.5 0 28.1 12.6 28.1 28.1" />
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0 0; 0 170; 0 0"
+          dur="2s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.5; 1" />
+      </g>
+      <path fill="#0F0" d="M746.2 228.7c0 15.5-12.6 28.1-28.1 28.1-15.5 0-28.1-12.6-28.1-28.1 0-15.5 12.6-28.1 28.1-28.1 15.5.1 28.1 12.6 28.1 28.1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0 0; 0 170; 0 0"
+          dur="2s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.5; 1" />
+      </path>
+      <g opacity=".6">
+        <defs>
+          <path id="u" d="M485.9 622.6h42.3v42.3h-42.3z" />
+        </defs>
+        <clipPath id="v">
+          <use xlinkHref="#u" overflow="visible" />
+        </clipPath>
+        <path clip-path="url(#v)" fill="#060C33" d="M528.2 643.7c0 11.7-9.5 21.1-21.1 21.1-11.7 0-21.1-9.5-21.1-21.1s9.5-21.1 21.1-21.1c11.6 0 21.1 9.4 21.1 21.1" />
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0 0;
+                  150 0;
+                  150 70; 
+                  220 70;
+                  220 -140;
+                  -70 -140;
+                  -70 -70;
+                  0 -70;
+                  0 0"
+          keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1"
+          dur="4s"
+          repeatCount="indefinite"
         />
       </g>
-      <ellipse
-        cx="295.027"
-        cy="193.118"
-        transform="translate(-295.027 -193.118)"
-        rx="1.07306"
-        ry="1.07433"
-        fill="#945DD6"
-      >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
-          <mpath xlinkHref="#path_2" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M294.685 193.474L268.932 219.258"
-        transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)"
-        stroke="url(#paint3_linear)"
-      >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
-          <mpath xlinkHref="#path_2" />
-        </animateMotion>
+      <path fill="#0F0" d="M522.2 636.9c0 11.7-9.5 21.1-21.1 21.1-11.7 0-21.1-9.5-21.1-21.1s9.5-21.1 21.1-21.1c11.6 0 21.1 9.5 21.1 21.1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0 0;
+                  150 0;
+                  150 70; 
+                  220 70;
+                  220 -140;
+                  -70 -140;
+                  -70 -70;
+                  0 -70;
+                  0 0"
+          keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1"
+          dur="4s"
+          repeatCount="indefinite"
+        />
       </path>
-      <ellipse
-        cx="295.027"
-        cy="193.118"
-        transform="translate(-295.027 -193.118)"
-        rx="1.07306"
-        ry="1.07433"
-        fill="#46737"
-      >
-        <animateMotion
-          dur="5s"
-          begin="1"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_2" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M294.685 193.474L268.932 219.258"
-        transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)"
-        stroke="url(#paint7_linear)"
-      >
-        <animateMotion
-          dur="5s"
-          begin="1"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_2" />
-        </animateMotion>
-      </path>
-      <ellipse
-        cx="476.525"
-        cy="363.313"
-        rx="1.07433"
-        ry="1.07306"
-        transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-        fill="#945DD6"
-      >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M476.171 362.952L450.417 337.168"
-        transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)"
-        stroke="url(#paint4_linear)"
-      >
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </path>
-      <ellipse
-        cx="382.164"
-        cy="155.029"
-        rx="1.07433"
-        ry="1.07306"
-        transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)"
-        fill="#F46737"
-      >
-        <animateMotion
-          dur="10s"
-          begin="1"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M381.81 154.669L356.057 128.885"
-        transform="translate(-381.81 -154.669) rotate(-45 381.81 154.669)"
-        stroke="url(#paint5_linear)"
-      >
-        <animateMotion
-          dur="10s"
-          begin="1"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </path>
-      <ellipse
-        cx="333.324"
-        cy="382.691"
-        rx="1.07306"
-        ry="1.07433"
-        transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)"
-        fill="#F46737"
-      >
-        <animateMotion
-          dur="5s"
-          begin="0"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_1" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M333.667 382.335L359.42 356.551"
-        transform="scale(-1 1) translate(-333.667 -382.335) rotate(45 333.667 382.335)"
-        stroke="url(#paint6_linear)"
-      >
-        <animateMotion
-          dur="5s"
-          begin="0"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_1" />
-        </animateMotion>
-      </path>
-      <ellipse
-        cx="165.524"
-        cy="93.9596"
-        rx="1.07306"
-        ry="1.07433"
-        transform="translate(-165.524 -93.9596)"
-        fill="#F46737"
-      >
-        <animateMotion
-          dur="10s"
-          begin="3"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M165.182 94.3159L139.429 120.1"
-        transform="translate(-165.182 -94.3159) rotate(45 165.182 94.3159)"
-        stroke="url(#paint7_linear)"
-      >
-        <animateMotion
-          dur="10s"
-          begin="3"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </path>
-      <ellipse
-        cx="476.525"
-        cy="363.313"
-        rx="1.07433"
-        ry="1.07306"
-        transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-        fill="#13ADC7"
-      >
-        <animateMotion
-          dur="12s"
-          begin="4"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </ellipse>
-      <path
-        d="M476.171 362.952L450.417 337.168"
-        transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)"
-        stroke="url(#paint11_linear)"
-      >
-        <animateMotion
-          dur="12s"
-          begin="4"
-          repeatCount="indefinite"
-          rotate="auto"
-        >
-          <mpath xlinkHref="#path_0" />
-        </animateMotion>
-      </path>
-      <defs>
-        <radialGradient
-          id="paint0_radial"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(301 301) rotate(90) scale(300)"
-        >
-          <stop offset="0.333333" stopColor="#FBFBFB" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient
-          id="paint1_radial"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(301 301) rotate(90) scale(300)"
-        >
-          <stop offset="0.333333" stopColor="#FBFBFB" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient
-          id="paint2_radial"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(301 301) rotate(90) scale(300)"
-        >
-          <stop offset="0.333333" stopColor="#FBFBFB" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient
-          id="paint3_linear"
-          x1="295.043"
-          y1="193.116"
-          x2="269.975"
-          y2="218.154"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint4_linear"
-          x1="476.529"
-          y1="363.31"
-          x2="451.461"
-          y2="338.272"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint5_linear"
-          x1="382.168"
-          y1="155.027"
-          x2="357.1"
-          y2="129.989"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#F46737" />
-          <stop offset="1" stopColor="#F46737" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint6_linear"
-          x1="333.309"
-          y1="382.693"
-          x2="358.376"
-          y2="357.655"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#F46737" />
-          <stop offset="1" stopColor="#F46737" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint7_linear"
-          x1="165.54"
-          y1="93.9578"
-          x2="140.472"
-          y2="118.996"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#F46737" />
-          <stop offset="1" stopColor="#F46737" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint8_linear"
-          x1="414.367"
-          y1="301.156"
-          x2="439.435"
-          y2="276.118"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint9_linear"
-          x1="515.943"
-          y1="288.238"
-          x2="541.339"
-          y2="291.454"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint10_linear"
-          x1="117.001"
-          y1="230.619"
-          x2="117.36"
-          y2="258.193"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint11_linear"
-          x1="476.529"
-          y1="363.31"
-          x2="451.461"
-          y2="338.272"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
-        </linearGradient>
-      </defs>
     </svg>
   </div>
 );

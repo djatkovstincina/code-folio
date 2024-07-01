@@ -6,11 +6,11 @@ import { FaUpwork } from "react-icons/fa6";
 
 const Contact = () => {
     return (
-        <section id="contact">
+        <section id="contact" className="contact">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2 className="section-title">Contact</h2>
+                <h2 className="section-title">Reach me</h2>
               </div>
               <div className="col-md-4">
                 <div className="contact-card">

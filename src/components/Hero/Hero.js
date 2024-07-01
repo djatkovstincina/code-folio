@@ -1,8 +1,7 @@
 import React from "react";
 import './Hero.scss';
 import { UpworkUrl, ResumeUrl } from '../../constants/constants';
-import HomeImage from '../../images/home.png';
-// import BackgroundAnimation from '../../components/BackgrooundAnimation/BackgroundAnimation'
+import BackgroundAnimation from '../../components/BackgrooundAnimation/BackgroundAnimation'
 
 const Hero = () => {
     const handleClickUpwork = () => {
@@ -36,8 +35,7 @@ const Hero = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="hero-animation">
-                            <img src={HomeImage} alt='Hero' className='hero-image' />
-                            {/* <BackgroundAnimation /> */}
+                            <BackgroundAnimation />
                         </div>
                     </div>
                 </div>
