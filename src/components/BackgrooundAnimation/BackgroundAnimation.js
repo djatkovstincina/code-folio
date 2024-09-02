@@ -14,7 +14,7 @@ const BackgroundAnimation = () => (
       </g>
       <path fill="none" stroke="#29ABE2" stroke-width="5.296" stroke-miterlimit="10" d="M112.5 101.9h677.7" />
       <circle fill="none" stroke="#0F0" stroke-width="5.296" stroke-miterlimit="10" cx="783.1" cy="79" r="50.3">
-        <animate attributeName="r" values="30;50.3;30" keyTimes="0;0.5;1" dur="5s" repeatCount="indefinite" />
+        <animate attributeName="r" values="30;50.3;30" keyTimes="0;0.5;1" dur="24s" repeatCount="indefinite" />
       </circle>
       <g opacity=".6">
         <defs>
@@ -78,12 +78,12 @@ const BackgroundAnimation = () => (
             attributeName="transform"
             type="translate"
             from="0 0"
-            to="120 0"
-            dur="6s"
+            to="70 0"
+            dur="9s"
             repeatCount="indefinite"
             begin="0s"
             keyTimes="0;0.5;1"
-            values="0 0; 120 0; 0 0" />
+            values="0 0; 70 0; 0 0" />
         </path>
       </g>
       <rect x="394" y="213.8" width="84.4" height="25.1" fill="#0F0">
@@ -91,11 +91,11 @@ const BackgroundAnimation = () => (
           attributeName="transform"
           type="translate"
           from="0 0"
-          to="120 0"
-          dur="6s"
+          to="70 0"
+          dur="9s"
           repeatCount="indefinite"
           keyTimes="0;0.5;1"
-          values="0 0; 120 0; 0 0" />
+          values="0 0; 70 0; 0 0" />
       </rect>
       <g opacity=".6">
         <defs>
@@ -110,7 +110,7 @@ const BackgroundAnimation = () => (
           type="translate"
           from="0 0"
           to="180 0"
-          dur="9s"
+          dur="12s"
           repeatCount="indefinite"
           keyTimes="0;0.5;1"
           values="0 0; 180 0; 0 0" />
@@ -122,7 +122,7 @@ const BackgroundAnimation = () => (
           type="translate"
           from="0 0"
           to="180 0"
-          dur="9s"
+          dur="12s"
           repeatCount="indefinite"
           keyTimes="0;0.5;1"
           values="0 0; 180 0; 0 0" />
@@ -135,11 +135,11 @@ const BackgroundAnimation = () => (
           <use xlinkHref="#q" overflow="visible" />
         </clipPath>
         <circle clip-path="url(#r)" fill="none" stroke="#060C33" stroke-width="5.296" stroke-miterlimit="10" cx="176.6" cy="403.3" r="109.4">
-          <animate attributeName="r" values="90;109.4;90" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" />
+          <animate attributeName="r" values="90;109.4;90" keyTimes="0;0.5;1" dur="18s" repeatCount="indefinite" />
         </circle>
       </g>
       <circle fill="none" stroke="#0F0" stroke-width="5.296" stroke-miterlimit="10" cx="160.4" cy="391.9" r="109.4">
-        <animate attributeName="r" values="90;109.4;90" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite" />
+        <animate attributeName="r" values="90;109.4;90" keyTimes="0;0.5;1" dur="18s" repeatCount="indefinite" />
       </circle>
       <g opacity=".6">
         <defs>
@@ -153,7 +153,7 @@ const BackgroundAnimation = () => (
           attributeName="transform"
           type="translate"
           values="0 0; 0 170; 0 0"
-          dur="2s"
+          dur="18s"
           repeatCount="indefinite"
           keyTimes="0; 0.5; 1" />
       </g>
@@ -162,7 +162,7 @@ const BackgroundAnimation = () => (
           attributeName="transform"
           type="translate"
           values="0 0; 0 170; 0 0"
-          dur="2s"
+          dur="18s"
           repeatCount="indefinite"
           keyTimes="0; 0.5; 1" />
       </path>
@@ -187,7 +187,7 @@ const BackgroundAnimation = () => (
                   0 -70;
                   0 0"
           keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1"
-          dur="4s"
+          dur="32s"
           repeatCount="indefinite"
         />
       </g>
@@ -205,7 +205,7 @@ const BackgroundAnimation = () => (
                   0 -70;
                   0 0"
           keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1"
-          dur="4s"
+          dur="32s"
           repeatCount="indefinite"
         />
       </path>
