@@ -12,7 +12,7 @@ const Contact = () => {
               <div className="col-md-12">
                 <h2 className="section-title">Reach me</h2>
               </div>
-              <div className="col-md-4">
+              <div className="col-sm-12 col-lg-4">
                 <div className="contact-card">
                   <div className="contact-card-icon">
                     <PiPaperPlaneTilt size="1.75em"/>
@@ -23,7 +23,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-sm-12 col-lg-4">
                 <div className="contact-card">
                   <div className="contact-card-icon">
                     <PiLinkedinLogo size="1.75em"/>
@@ -34,7 +34,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-sm-12 col-lg-4">
                 <div className="contact-card">
                   <div className="contact-card-icon">
                     <FaUpwork size="1.75em"/>

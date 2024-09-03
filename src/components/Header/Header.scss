@@ -28,6 +28,7 @@
   .logo {
     display: grid;
     align-items: center;
+    align-content: center;
     grid-template-columns: 32px 160px;
     column-gap: 10px;
   }
