@@ -85,7 +85,7 @@ const Projects = () => {
                         </div>
                     </div>
                     {filteredProjects.map((project, index) => (
-                        <div className='col-md-4' key={index}>
+                        <div className='col-sm-12 col-md-6 col-lg-4' key={index}>
                             <Project
                                 image={projectImages[project.title] || project.image}
                                 title={project.title}

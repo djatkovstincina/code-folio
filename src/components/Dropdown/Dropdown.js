@@ -12,17 +12,17 @@ const Dropdown = ({ options, selectedCategory, handleCategoryChange }) => {
     };
 
     return (
-        <div className="dropdown">
-            <div className="dropdown-header" onClick={toggleDropdown}>
+        <div className="select">
+            <div className="select-header" onClick={toggleDropdown}>
                 {selectedCategory}
                 <span className={`arrow ${isOpen ? 'open' : ''}`}></span>
             </div>
             {isOpen && (
-                <ul className="dropdown-list">
+                <ul className="select-list">
                     {options.map((option, index) => (
                         <li 
                             key={index} 
-                            className={`dropdown-list-item ${selectedCategory === option ? 'selected' : ''}`} 
+                            className={`select-list-item ${selectedCategory === option ? 'selected' : ''}`} 
                             onClick={() => handleOptionClick(option)}
                         >
                             {option}

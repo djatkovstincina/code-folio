@@ -14,7 +14,9 @@ const Contact = () => {
               </div>
               <div className="col-md-4">
                 <div className="contact-card">
-                  <PiPaperPlaneTilt size="1.75em" className="contact-card-icon"/>
+                  <div className="contact-card-icon">
+                    <PiPaperPlaneTilt size="1.75em"/>
+                  </div>
                   <p className="contact-card-text">
                     <span>Email me:</span>
                     <a href={"mailto:" + PersonalEmail} target="_blank" rel="noopener noreferrer">{PersonalEmail}</a>
@@ -23,7 +25,9 @@ const Contact = () => {
               </div>
               <div className="col-md-4">
                 <div className="contact-card">
-                  <PiLinkedinLogo size="1.75em" className="contact-card-icon"/>
+                  <div className="contact-card-icon">
+                    <PiLinkedinLogo size="1.75em"/>
+                  </div>
                   <p className="contact-card-text">
                     <span>Linkedin:</span>
                     <a href={LinkedInUrl} target="_blank" rel="noopener noreferrer">Nemanja Djatkov</a>
@@ -32,7 +36,9 @@ const Contact = () => {
               </div>
               <div className="col-md-4">
                 <div className="contact-card">
-                  <FaUpwork size="1.75em" className="contact-card-icon"/>
+                  <div className="contact-card-icon">
+                    <FaUpwork size="1.75em"/>
+                  </div>
                   <p className="contact-card-text">
                     <span>UpWork:</span>
                     <a href={UpworkUrl} target="_blank" rel="noopener noreferrer">Start a project</a>

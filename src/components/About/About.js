@@ -17,7 +17,9 @@ const About = () => {
           <div className="col-md-12">
             <div className="about-wrap">
               <div className="about-image-wrap">
-                <AiOutlineLaptop className="about-image-icon" size="4em" />
+                <div className="about-image-icon" >
+                  <AiOutlineLaptop size="4em" />
+                </div>
                 <img src={Avatar} alt="About" className="about-image"/>
               </div>
               <div className="about-text-wrap">

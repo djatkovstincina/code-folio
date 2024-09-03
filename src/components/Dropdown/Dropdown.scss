@@ -1,4 +1,4 @@
-.dropdown {
+.select {
     position: relative;
     width: 100%;
     max-width: 130px;
@@ -46,7 +46,7 @@
         }
     }
 
-    .dropdown-list {
+    &-list {
         position: absolute;
         width: 100%;
         border-radius: 4px;
@@ -59,7 +59,7 @@
         overflow-y: auto;
     }
 
-    .dropdown-list-item {
+    &-list-item {
         padding: 10px;
         color: var(--white);
         background-color: var(--blue);
