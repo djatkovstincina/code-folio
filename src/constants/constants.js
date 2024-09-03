@@ -37,22 +37,6 @@ export const ProjectsData = [
         codeLink: 'https://github.com/djatkovstincina/ProductManagementSystem',
         category: 'Vue3'
     },
-    // {
-    //     image: 'https://picsum.photos/300/180',
-    //     title: "Palindrome checker",
-    //     description: "A web app that checks if a string is a palindrome using JavaScript. It employs regex for pattern matching and array manipulation for processing input. The UI is styled with Bootstrap for a responsive, modern look. This project demonstrates practical web development skills in a concise tool.",
-    //     // webLink: "#",
-    //     codeLink: 'https://github.com/djatkovstincina/Palindrome-Checker',
-    //     category: 'Javascript'
-    // },
-    // {
-    //     image: 'https://picsum.photos/300/180',
-    //     title: "JavaScript RPG Practice Project",
-    //     description: "In this practice project, you'll create your own Role Playing Game (RPG) to learn fundamental programming concepts in JavaScript. You'll work with arrays, strings, objects, functions, loops, and if/else statements. This project offers a hands-on approach to mastering essential coding skills while building a fun, interactive game.",
-    //     // webLink: "#",
-    //     codeLink: 'https://github.com/djatkovstincina/Role-Playing-Game.git',
-    //     category: 'JavaScript'
-    // },
     {
         image: 'https://picsum.photos/300/180',
         title: "Sok Galerija",
