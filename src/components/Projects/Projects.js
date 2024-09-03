@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './Projects.scss';
 import Project from '../Project/Project';
+import Dropdown from "../Dropdown/Dropdown";
+import Filters from "../Filters/Filters";
 import { ProjectsData } from '../../constants/constants';
 import axios from "axios";
 
@@ -15,11 +17,11 @@ const Projects = () => {
         try {
             const { data } = await axios.get(
                 `${API_URL}/collections/${process.env.REACT_APP_UNSPLASH_COLLECTION_ID}/photos`, {
-                    params: {
-                        client_id: process.env.REACT_APP_UNSPLASH_ACCESS_KEY,
-                        per_page: 30,
-                    }
+                params: {
+                    client_id: process.env.REACT_APP_UNSPLASH_ACCESS_KEY,
+                    per_page: 30,
                 }
+            }
             );
             setImages(data);
         } catch (error) {
@@ -55,10 +57,6 @@ const Projects = () => {
         }
     }, [images]);
 
-    const handleCategoryChange = (category) => {
-        setSelectedCategory(category);
-    };
-
     const filteredProjects = selectedCategory === 'All'
         ? ProjectsData
         : ProjectsData.filter(project => project.category === selectedCategory);
@@ -72,23 +70,24 @@ const Projects = () => {
                     <div className="col-md-12">
                         <div className='projects'>
                             <h2 className="section-title">Projects</h2>
-                            <div className='filters'>
-                                {categories.map(category => (
-                                    <button
-                                        key={category}
-                                        className={'filters-btn ' + (selectedCategory === category ? 'selected' : '')}
-                                        onClick={() => handleCategoryChange(category)}
-                                    >
-                                        {category}
-                                    </button>
-                                ))}
-                            </div>
+
+                            <Dropdown
+                                options={categories}
+                                selectedCategory={selectedCategory}
+                                handleCategoryChange={setSelectedCategory}
+                            />
+
+                            <Filters
+                                categories={categories}
+                                selectedCategory={selectedCategory}
+                                handleCategoryChange={setSelectedCategory}
+                            />
                         </div>
                     </div>
                     {filteredProjects.map((project, index) => (
                         <div className='col-md-4' key={index}>
                             <Project
-                                image={projectImages[project.title]}
+                                image={projectImages[project.title] || project.image}
                                 title={project.title}
                                 category={project.category}
                                 description={project.description}
