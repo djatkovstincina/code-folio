@@ -28,31 +28,61 @@
     color: var(--blue);
   }
 
+  .hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   .navigation {
     display: flex;
 
-    ul {
-      display: grid;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      grid-template-columns: repeat(4, auto);
-      column-gap: 40px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    &.open {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+
+      &.open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        z-index: 1000;
+      }
+
+      ul {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, auto);
+        column-gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
 
-      li {
-        a {
-          color: var(--white);
-          text-decoration: none;
-          font-size: 0.875em;
-          font-weight: 600;
-          transition: color .4s ease-in-out;
+        li {
+          a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.875em;
+            font-weight: 600;
+            transition: color .4s ease-in-out;
 
-          &:hover {
-            color: var(--bright-green);
+            &:hover {
+              color: var(--bright-green);
+            }
           }
         }
       }

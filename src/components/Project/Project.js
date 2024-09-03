@@ -2,7 +2,7 @@ import React from "react";
 import './Project.scss';
 import { AiFillRightCircle } from "react-icons/ai";
 
-const Project = ({ image, title, category, description, webLink, codeLink }) => {
+const Project = ({ title, image, category, description, webLink, codeLink }) => {
     const webLinkBtn = webLink && (
         <a href={webLink} target="_blank" rel="noreferrer" className="project-link">
             <span>View Project</span>
