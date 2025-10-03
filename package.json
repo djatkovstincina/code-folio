@@ -1,32 +1,49 @@
 {
   "name": "code-folio",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Personal portfolio website built with React showcasing web development projects",
+  "keywords": [
+    "portfolio",
+    "react",
+    "web-development",
+    "scss",
+    "responsive"
+  ],
+  "author": "Nemanja Djatkov <ndjatkov@gmail.com>",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djatkovstincina/code-folio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djatkovstincina/code-folio/issues"
+  },
   "private": true,
   "dependencies": {
-    "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "sass": "^1.77.8",
-    "save-dev": "^0.0.1-security",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --ext .js,.jsx",
+    "analyze": "npm run build && npx serve -s build",
+    "clean": "rm -rf build node_modules package-lock.json && npm install"
   },
   "eslintConfig": {
     "extends": [
