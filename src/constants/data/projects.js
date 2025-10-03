@@ -1,10 +1,5 @@
-export const UpworkUrl = "https://www.upwork.com/freelancers/~01ab060baa0b4d2244";
-export const ResumeUrl = "https://www.cakeresume.com/nemanja-djatkov";
-export const GithubUrl = "https://github.com/djatkovstincina";
-export const LinkedInUrl = "https://www.linkedin.com/in/nemanja-djatkov/";
-export const PersonalEmail = "ndjatkov@gmail.com";
-export const PersonalPhone = "+381643095484";
-export const ProjectsData = [
+// Projects data for portfolio
+export const PROJECTS_DATA = [
     {
         image: '/images/projects/codefolio.webp',
         title: "This Codefolio",
@@ -73,3 +68,6 @@ export const ProjectsData = [
         category: ['WordPress']
     }
 ];
+
+// Legacy export for backward compatibility
+export const ProjectsData = PROJECTS_DATA;

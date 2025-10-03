@@ -1,28 +1,44 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './styles/style.scss';
-import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import Projects from './components/Projects/Projects';
-import Technologies from './components/Technologies/Technologies';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import { Header, LoadingSpinner, Hero } from './components';
+
+// Lazy load components that are below the fold
+const Projects = React.lazy(() => import('./components/sections/Projects/Projects'));
+const Technologies = React.lazy(() => import('./components/sections/Technologies/Technologies'));
+const About = React.lazy(() => import('./components/sections/About/About'));
+const Contact = React.lazy(() => import('./components/sections/Contact/Contact'));
+const Footer = React.lazy(() => import('./components/layout/Footer/Footer'));
 
 
 function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <Projects />
-        <Technologies />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+      <div className="App">
+        <Header />
+        <main id="main-content" role="main" aria-label="Main content">
+          <Hero />
+          <Suspense fallback={<LoadingSpinner message="Loading projects..." />}>
+            <Projects />
+          </Suspense>
+          <Suspense fallback={<LoadingSpinner message="Loading technologies..." />}>
+            <Technologies />
+          </Suspense>
+          <Suspense fallback={<LoadingSpinner message="Loading about section..." />}>
+            <About />
+          </Suspense>
+          <Suspense fallback={<LoadingSpinner message="Loading contact information..." />}>
+            <Contact />
+          </Suspense>
+        </main>
+        <Suspense fallback={<LoadingSpinner message="Loading footer..." />}>
+          <Footer />
+        </Suspense>
+      </div>
+    </>
   );
 }
 
