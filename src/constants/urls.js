@@ -1,7 +1,7 @@
 // External URLs and links
 export const EXTERNAL_URLS = {
     UPWORK: "https://www.upwork.com/freelancers/~01ab060baa0b4d2244",
-    RESUME: "https://www.cakeresume.com/nemanja-djatkov",
+    RESUME: "/files/Nemanja_Djatkov-CV-2025.pdf",
     GITHUB: "https://github.com/djatkovstincina",
     LINKEDIN: "https://www.linkedin.com/in/nemanja-djatkov/",
 };
